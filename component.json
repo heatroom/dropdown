@@ -1,0 +1,26 @@
+{
+  "name": "dropdown",
+  "repo": "heatroom/dropdown",
+  "description": "Dropdown UI Component",
+  "version": "0.0.1",
+  "keywords": [
+    "dropdown"
+  ],
+  "dependencies": {
+    "component/classes": "*",
+    "component/bind": "*",
+    "component/inherit": "*",
+    "heatroom/menu": "*",
+    "component/jquery": "*"
+  },
+  "development": {},
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": [
+    "index.js",
+    "template.js"
+  ],
+  "styles": [
+    "dropdown.css"
+  ]
+}

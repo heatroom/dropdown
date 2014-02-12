@@ -1,0 +1,34 @@
+<!DOCTYPE 5>
+<html>
+  <head>
+    <title>Dropdown component</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" href="build/build.css"/>
+    <style>
+      ul.custom-menu {
+        background-color: #333;
+        color: white;
+      }
+
+      ul.custom-menu li a {
+        color: #8cc;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Dropdown</h2>
+    <p>Into input element: <input class="dropdown-link dropdown-input"/></p>
+
+    <script src="build/build.js"></script>
+    <script>
+      var Dropdown = require('dropdown/index.js');
+
+      var n = 0;
+
+      Dropdown('.dropdown-input', {
+              items: [[1,'car'], [2,'trucks'], [3,'aeroplanes']]
+      }).on('select', function(slug) {console.log('Aero !!' + slug)}).focus(1);
+
+    </script>
+  </body>
+</html>
